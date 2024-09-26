@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>&lt;no title&gt; &mdash; Part2_GUI 0.0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=d45e8c67"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Part2_GUI documentation" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Part2_GUI
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#Part2_GUI.SchoolManagementSystem.add_course"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.add_course()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Part2_GUI.SchoolManagementSystem.add_instructor"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.add_instructor()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Part2_GUI.SchoolManagementSystem.add_student"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.add_student()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Part2_GUI.SchoolManagementSystem.backup_database"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.backup_database()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Part2_GUI.SchoolManagementSystem.close_db_connection"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.close_db_connection()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Part2_GUI.SchoolManagementSystem.create_course_form"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.create_course_form()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Part2_GUI.SchoolManagementSystem.create_instructor_form"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.create_instructor_form()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Part2_GUI.SchoolManagementSystem.create_register_course_form"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.create_register_course_form()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Part2_GUI.SchoolManagementSystem.create_student_form"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.create_student_form()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Part2_GUI.SchoolManagementSystem.create_view_all_form"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.create_view_all_form()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Part2_GUI.SchoolManagementSystem.delete_record"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.delete_record()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Part2_GUI.SchoolManagementSystem.edit_record"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.edit_record()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Part2_GUI.SchoolManagementSystem.export_to_csv"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.export_to_csv()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Part2_GUI.SchoolManagementSystem.get_db_connection"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.get_db_connection()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Part2_GUI.SchoolManagementSystem.handle_table_click"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.handle_table_click()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Part2_GUI.SchoolManagementSystem.load_data"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.load_data()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Part2_GUI.SchoolManagementSystem.open_edit_dialog"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.open_edit_dialog()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Part2_GUI.SchoolManagementSystem.refresh_dropdowns"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.refresh_dropdowns()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Part2_GUI.SchoolManagementSystem.refresh_view_all"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.refresh_view_all()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Part2_GUI.SchoolManagementSystem.register_course"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.register_course()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Part2_GUI.SchoolManagementSystem.save_data"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.save_data()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Part2_GUI.SchoolManagementSystem.search_records"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.search_records()</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Part2_GUI</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">&lt;no title&gt;</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Part2_GUI.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <dl class="py class" id="module-Part2_GUI">
+<dt class="sig sig-object py" id="Part2_GUI.SchoolManagementSystem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Part2_GUI.</span></span><span class="sig-name descname"><span class="pre">SchoolManagementSystem</span></span><a class="reference internal" href="_modules/Part2_GUI.html#SchoolManagementSystem"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Part2_GUI.SchoolManagementSystem" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Tk</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Part2_GUI.SchoolManagementSystem.add_course">
+<span class="sig-name descname"><span class="pre">add_course</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Part2_GUI.html#SchoolManagementSystem.add_course"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Part2_GUI.SchoolManagementSystem.add_course" title="Link to this definition"></a></dt>
+<dd><p>Adds a new course to the database and updates the UI.</p>
+<p>Parameters:
+self: Instance of the class.</p>
+<p>Returns:
+None</p>
+<p>Functionality:
+- Retrieves the course’s ID, name, and instructor name from the input fields.
+- Validates that all fields are filled.
+- Creates a new Course object and inserts it into the database.
+- Updates the course list and refreshes the dropdown menus and the display table.
+- Clears the input fields after adding the course.
+- Handles and displays any input or database errors.</p>
+<p>Example:
+self.add_course()</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Part2_GUI.SchoolManagementSystem.add_instructor">
+<span class="sig-name descname"><span class="pre">add_instructor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Part2_GUI.html#SchoolManagementSystem.add_instructor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Part2_GUI.SchoolManagementSystem.add_instructor" title="Link to this definition"></a></dt>
+<dd><p>Adds a new instructor to the database and updates the UI.</p>
+<p>Parameters:
+self: Instance of the class.</p>
+<p>Returns:
+None</p>
+<p>Functionality:
+- Retrieves the instructor’s name, age, email, and ID from the input fields.
+- Validates that all fields are filled.
+- Creates a new Instructor object and inserts it into the database.
+- Updates the instructor list and refreshes the dropdown menus and the display table.
+- Clears the input fields after adding the instructor.
+- Handles and displays any input or database errors.</p>
+<p>Example:
+self.add_instructor()</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Part2_GUI.SchoolManagementSystem.add_student">
+<span class="sig-name descname"><span class="pre">add_student</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Part2_GUI.html#SchoolManagementSystem.add_student"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Part2_GUI.SchoolManagementSystem.add_student" title="Link to this definition"></a></dt>
+<dd><p>Adds a new student to the database and updates the UI.</p>
+<p>Parameters:
+self: Instance of the class.</p>
+<p>Returns:
+None</p>
+<p>Functionality:
+- Retrieves the student’s name, age, email, and ID from the input fields.
+- Validates that all fields are filled.
+- Creates a new Student object and inserts it into the database.
+- Updates the student list and refreshes the dropdown menus and the display table.
+- Clears the input fields after adding the student.
+- Handles and displays any input or database errors.</p>
+<p>Example:
+self.add_student()</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Part2_GUI.SchoolManagementSystem.backup_database">
+<span class="sig-name descname"><span class="pre">backup_database</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Part2_GUI.html#SchoolManagementSystem.backup_database"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Part2_GUI.SchoolManagementSystem.backup_database" title="Link to this definition"></a></dt>
+<dd><p>Opens a file dialog to specify the location to save a backup of the database.</p>
+<p>The backup is created using the <cite>mysqldump</cite> command. A message box is displayed to
+inform the user of the success or failure of the operation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Part2_GUI.SchoolManagementSystem.close_db_connection">
+<span class="sig-name descname"><span class="pre">close_db_connection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">connection</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Part2_GUI.html#SchoolManagementSystem.close_db_connection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Part2_GUI.SchoolManagementSystem.close_db_connection" title="Link to this definition"></a></dt>
+<dd><p>Closes the database connection.</p>
+<p>This method checks if the provided connection is active and closes it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>connection</strong> (<em>mysql.connector.connection_cext.CMySQLConnection</em>) – The database connection object.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Part2_GUI.SchoolManagementSystem.create_course_form">
+<span class="sig-name descname"><span class="pre">create_course_form</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Part2_GUI.html#SchoolManagementSystem.create_course_form"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Part2_GUI.SchoolManagementSystem.create_course_form" title="Link to this definition"></a></dt>
+<dd><p>Creates the form for adding a course.</p>
+<p>This method initializes the form fields (Course ID, Course Name, Instructor Name) and
+adds a button to submit the course information to the database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Part2_GUI.SchoolManagementSystem.create_instructor_form">
+<span class="sig-name descname"><span class="pre">create_instructor_form</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Part2_GUI.html#SchoolManagementSystem.create_instructor_form"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Part2_GUI.SchoolManagementSystem.create_instructor_form" title="Link to this definition"></a></dt>
+<dd><p>Creates the form for adding an instructor.</p>
+<p>This method initializes the form fields (Name, Age, Email, Instructor ID) and
+adds a button to submit the instructor information to the database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Part2_GUI.SchoolManagementSystem.create_register_course_form">
+<span class="sig-name descname"><span class="pre">create_register_course_form</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Part2_GUI.html#SchoolManagementSystem.create_register_course_form"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Part2_GUI.SchoolManagementSystem.create_register_course_form" title="Link to this definition"></a></dt>
+<dd><p>Creates the form for registering a student for a course.</p>
+<p>This method initializes the form fields (Select Student, Select Course) and
+adds a button to submit the registration information to the database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Part2_GUI.SchoolManagementSystem.create_student_form">
+<span class="sig-name descname"><span class="pre">create_student_form</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Part2_GUI.html#SchoolManagementSystem.create_student_form"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Part2_GUI.SchoolManagementSystem.create_student_form" title="Link to this definition"></a></dt>
+<dd><p>Creates the form for adding a student.</p>
+<p>This method initializes the form fields (Name, Age, Email, Student ID) and
+adds a button to submit the student information to the database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Part2_GUI.SchoolManagementSystem.create_view_all_form">
+<span class="sig-name descname"><span class="pre">create_view_all_form</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Part2_GUI.html#SchoolManagementSystem.create_view_all_form"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Part2_GUI.SchoolManagementSystem.create_view_all_form" title="Link to this definition"></a></dt>
+<dd><p>Creates the form for viewing all information.</p>
+<p>This method initializes the search bar and the table for displaying all information
+(ID, Name, Age, Email, Additional Info, Actions). It also adds buttons for refreshing
+the table, exporting data to CSV, saving data, and loading data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Part2_GUI.SchoolManagementSystem.delete_record">
+<span class="sig-name descname"><span class="pre">delete_record</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">record_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">record_id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Part2_GUI.html#SchoolManagementSystem.delete_record"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Part2_GUI.SchoolManagementSystem.delete_record" title="Link to this definition"></a></dt>
+<dd><p>Deletes a record of the specified type and ID from the database.</p>
+<p>The method attempts to delete the record and commits the changes. If an error occurs,
+the transaction is rolled back and an error message is displayed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>record_type</strong> (<em>str</em>) – The type of record to delete (e.g., “Student”, “Instructor”).</p></li>
+<li><p><strong>record_id</strong> (<em>int</em>) – The unique identifier of the record to be deleted.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Part2_GUI.SchoolManagementSystem.edit_record">
+<span class="sig-name descname"><span class="pre">edit_record</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">record_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">record_id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Part2_GUI.html#SchoolManagementSystem.edit_record"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Part2_GUI.SchoolManagementSystem.edit_record" title="Link to this definition"></a></dt>
+<dd><p>Opens an edit dialog for the specified record type and record ID.</p>
+<p>It fetches the record from the database and populates the dialog with its data,
+allowing the user to make changes. If the record is found, the dialog is opened;
+otherwise, a warning message is displayed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>record_type</strong> (<em>str</em>) – The type of record to edit (e.g., “Student”, “Instructor”).</p></li>
+<li><p><strong>record_id</strong> (<em>int</em>) – The unique identifier of the record to be edited.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Part2_GUI.SchoolManagementSystem.export_to_csv">
+<span class="sig-name descname"><span class="pre">export_to_csv</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Part2_GUI.html#SchoolManagementSystem.export_to_csv"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Part2_GUI.SchoolManagementSystem.export_to_csv" title="Link to this definition"></a></dt>
+<dd><p>Opens a file dialog to specify the location to save exported data in CSV format.</p>
+<p>The method fetches data from the database for students, instructors, and courses,
+writing it to the specified CSV file. A message box is displayed to inform the user
+of the success or failure of the operation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Part2_GUI.SchoolManagementSystem.get_db_connection">
+<span class="sig-name descname"><span class="pre">get_db_connection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Part2_GUI.html#SchoolManagementSystem.get_db_connection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Part2_GUI.SchoolManagementSystem.get_db_connection" title="Link to this definition"></a></dt>
+<dd><p>Establishes a connection to the database.</p>
+<p>This method attempts to connect to the MySQL database using the provided
+connection details. If the connection is successful, it returns the connection object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The database connection object, or None if the connection fails.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>connection (mysql.connector.connection_cext.CMySQLConnection)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Part2_GUI.SchoolManagementSystem.handle_table_click">
+<span class="sig-name descname"><span class="pre">handle_table_click</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Part2_GUI.html#SchoolManagementSystem.handle_table_click"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Part2_GUI.SchoolManagementSystem.handle_table_click" title="Link to this definition"></a></dt>
+<dd><p>Handles click events on the table, allowing for editing or deleting records.</p>
+<p>Parameters:
+self: Instance of the class.
+event: The event object that triggered the method.</p>
+<p>Returns:
+None</p>
+<p>Functionality:
+- Identifies the clicked row and retrieves the record ID and type.
+- Prompts the user to choose between editing or deleting the record.
+- Calls the appropriate method based on the user’s choice.</p>
+<p>Example:
+self.view_all_table.bind(“&lt;ButtonRelease-1&gt;”, self.handle_table_click)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Part2_GUI.SchoolManagementSystem.load_data">
+<span class="sig-name descname"><span class="pre">load_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Part2_GUI.html#SchoolManagementSystem.load_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Part2_GUI.SchoolManagementSystem.load_data" title="Link to this definition"></a></dt>
+<dd><p>Opens a file dialog to load student, instructor, and course data from a JSON file.</p>
+<p>If a valid file path is selected, the data is read from the JSON file and
+deserialized into the respective attributes. The method inserts the data into
+the database, updating existing records if they exist. A message box informs the
+user about the success or failure of the loading process.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Part2_GUI.SchoolManagementSystem.open_edit_dialog">
+<span class="sig-name descname"><span class="pre">open_edit_dialog</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">record_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">record</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conn</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Part2_GUI.html#SchoolManagementSystem.open_edit_dialog"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Part2_GUI.SchoolManagementSystem.open_edit_dialog" title="Link to this definition"></a></dt>
+<dd><p>Creates a dialog for editing a record with the specified type and data.</p>
+<p>The dialog allows the user to update the name, age, and email fields (if applicable)
+and save the changes back to the database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>record_type</strong> (<em>str</em>) – The type of record being edited.</p></li>
+<li><p><strong>record</strong> (<em>dict</em>) – The record data to populate the dialog with.</p></li>
+<li><p><strong>conn</strong> (<em>Connection</em>) – The database connection to perform updates.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Part2_GUI.SchoolManagementSystem.refresh_dropdowns">
+<span class="sig-name descname"><span class="pre">refresh_dropdowns</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Part2_GUI.html#SchoolManagementSystem.refresh_dropdowns"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Part2_GUI.SchoolManagementSystem.refresh_dropdowns" title="Link to this definition"></a></dt>
+<dd><p>Refreshes the values in the student, course, and instructor dropdown menus.</p>
+<p>Parameters:
+self: Instance of the class.</p>
+<p>Returns:
+None</p>
+<p>Functionality:
+- Clears existing values in the dropdown menus.
+- Establishes a database connection and fetches all student names, course names, and instructor names.
+- Updates the dropdown menus with the fetched values.</p>
+<p>Example:
+self.refresh_dropdowns()</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Part2_GUI.SchoolManagementSystem.refresh_view_all">
+<span class="sig-name descname"><span class="pre">refresh_view_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Part2_GUI.html#SchoolManagementSystem.refresh_view_all"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Part2_GUI.SchoolManagementSystem.refresh_view_all" title="Link to this definition"></a></dt>
+<dd><p>Refreshes and displays all students, instructors, and courses in the table.</p>
+<p>Parameters:
+self: Instance of the class.</p>
+<p>Returns:
+None</p>
+<p>Functionality:
+- Clears the existing table data.
+- Establishes a database connection and fetches all students, instructors, and courses.
+- Inserts the fetched data into the table for display.
+- Binds the click event on the table to handle editing or deleting records.</p>
+<p>Example:
+self.refresh_view_all()</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Part2_GUI.SchoolManagementSystem.register_course">
+<span class="sig-name descname"><span class="pre">register_course</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Part2_GUI.html#SchoolManagementSystem.register_course"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Part2_GUI.SchoolManagementSystem.register_course" title="Link to this definition"></a></dt>
+<dd><p>Registers a student for a selected course.</p>
+<p>Parameters:
+self: Instance of the class.</p>
+<p>Returns:
+None</p>
+<p>Functionality:
+- Retrieves selected student and course names from the dropdown menus.
+- Validates that both a student and course are selected.
+- Inserts the registration data into the database and commits the transaction.
+- Displays a success message upon successful registration.</p>
+<p>Example:
+self.register_course()</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Part2_GUI.SchoolManagementSystem.save_data">
+<span class="sig-name descname"><span class="pre">save_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Part2_GUI.html#SchoolManagementSystem.save_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Part2_GUI.SchoolManagementSystem.save_data" title="Link to this definition"></a></dt>
+<dd><p>Opens a file dialog to save student, instructor, and course data in JSON format.</p>
+<p>If a valid file path is selected, the current data of students, instructors,
+and courses is serialized to JSON and written to the specified file. A message
+box is displayed to inform the user of the success of the operation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Part2_GUI.SchoolManagementSystem.search_records">
+<span class="sig-name descname"><span class="pre">search_records</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Part2_GUI.html#SchoolManagementSystem.search_records"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Part2_GUI.SchoolManagementSystem.search_records" title="Link to this definition"></a></dt>
+<dd><p>Searches for students, instructors, and courses in the database.</p>
+<p>Parameters:
+self: Instance of the class.</p>
+<p>Returns:
+None</p>
+<p>Functionality:
+- Retrieves the search term from the search entry field.
+- Clears the current entries in the display table.
+- Filters the student, instructor, and course lists based on the search term.
+- Updates the display table with the filtered results.</p>
+<p>Example:
+self.search_records()</p>
+</dd></dl>
+
+</dd></dl>
+
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Part2_GUI documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Ihab Faour.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
